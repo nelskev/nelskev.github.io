@@ -1,0 +1,14 @@
+body {
+    background-color: black;
+}
+
+* {
+    font-family: "Gill Sans", sans-serif;
+    color: aliceblue;
+}
+
+a:hover {
+    color:black;
+    transition: 0.2s;
+    background-color: white;
+}
