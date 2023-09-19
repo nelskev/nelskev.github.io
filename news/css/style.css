@@ -1,0 +1,13 @@
+header{
+    background-color: #5E9EA0;
+}
+p{font-family: 'Times New Roman', Times, serif;
+font-size: 18px;}
+li{
+    font-size: 18px;
+}
+footer{
+    background-color: #5E9EA0;
+}
+a:link{color:red}
+a:visited{color:red}
