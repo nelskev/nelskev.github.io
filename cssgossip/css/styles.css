@@ -12,7 +12,7 @@ h1 {
 
 h3 {
     font-size: 1.5em;
-    border-bottom: 1px solid, black;
+    border-bottom: 1px solid black;
 }
 
 span.fonts {
@@ -31,7 +31,7 @@ span.colors {
 span.more {
     color: blue;
     text-decoration: underline;
-    border: 1px dashed, gray;
+    border: 1px dashed gray;
     background-color: #D69BBE;
 }
 
