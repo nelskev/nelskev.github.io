@@ -1,0 +1,71 @@
+/* Kevin Nelson 
+  10/03/23 */
+
+
+#outerwrapper {
+width: 70%;
+	margin-left: auto;
+	margin-right: auto;
+} 
+
+.floatleft { 
+float: left;
+margin-right: 3%;
+
+}
+
+.floatright {
+float: right;
+margin-left: 3%;
+
+}
+
+h1 {
+	font-family: Arial, sans-serif;
+	font-size: 3em;
+}
+
+h2{
+	font-family: 'Trebuchet MS', sans-serif;
+	font-style: italic;
+}
+
+Main {
+	background-color: #c5a98b;
+	padding: 10px;
+}
+
+main, footer { 
+clear: both;
+}
+ul {
+	list-style: none; 
+}
+main ul {
+	list-style-image: url(../images/tomato.png);
+}
+
+body {
+	background-color: #b8d1eb;
+	color: #000;
+	font-family: 'Times New Roman', Times, serif;
+}
+
+.svg {
+	fill: red;
+}
+
+.image-1 {
+	filter: invert(100%);
+	-webkit-filter: invert(100%);
+	margin-top: 20px;
+  }
+
+
+footer {
+	font-size: .75em;
+	text-align: center;
+	padding: 10px;
+	background-color: #a31313;
+
+}
