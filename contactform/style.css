@@ -1,0 +1,11 @@
+input#contactperson {
+    width: 250px;
+}
+
+input#company {
+    width: 400px;
+}
+
+input#email , input#phone {
+    width: 200px;
+}
