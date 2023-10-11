@@ -1,0 +1,15 @@
+/* Practice CustomFonts Style Sheet */
+
+  @import url('https://fonts.googleapis.com/css2?family=Abel&family=EB+Garamond:wght@400;500;800&display=swap');
+
+.websafe{
+    
+font-family: 'EB Garamond', serif;
+    /* font-family: Arial, Courier, "Courier New"; */
+}
+.google {
+    font-family: 'Abel', sans-serif;
+/* font-family: 'EB Garamond', serif;
+    font-family: 'Dosis', Georgia, serif; */
+}
+
