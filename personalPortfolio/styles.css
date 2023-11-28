@@ -1,0 +1,183 @@
+html {
+    background-color: black;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    
+    margin-left: auto;
+    margin-right: auto;
+}
+
+  @import url('https://fonts.googleapis.com/css2?family=Abel&family=EB+Garamond:wght@400;500;800&family=Roboto:ital,wght@0,100;0,400;0,700;1,100;1,300&display=swap');
+
+
+img.logo{
+  -webkit-filter: invert(.75); /* safari 6.0 - 9.0 */
+          filter: invert(.75);
+          max-height: 50px;
+          float: left;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a.active {
+    background-color: white;
+    color: black;
+  }
+
+  li a:visited {
+    color: rgb(69, 196, 69);
+  } 
+  li a:hover:visited {
+    color: rgb(12, 49, 12);
+  }
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 12px 14px;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    background-color: white;
+    color: black;
+    
+  }
+
+  li a:active {
+    background-color: black;
+    color: white;
+  
+  }
+
+.current {
+  font-weight: bold;
+}
+
+.completed {
+  color: green;
+}
+
+td.completed {
+  color: green;
+}
+
+  .column1 {
+    float: left;
+    width: 20%;
+  }
+
+  .column2 {
+    float: right;
+    width: 80%;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+.image-1 {
+    filter: invert(100%);
+	-webkit-filter: invert(100%);
+	margin-top: 20px;
+  }
+
+
+
+
+footer {
+	font-size: .75em;
+	text-align: center;
+	padding: 10px;
+	/* background-color: #a31313; */
+
+}
+
+
+
+table {
+  width:600px;
+  height:250px; 
+  border:1px solid #b3adad;
+  border-collapse:collapse;
+  padding:5px;
+}
+table th {
+  border:1px solid #b3adad;
+  padding:5px;
+  background: #f0f0f0;
+  color: #313030;
+}
+table td {
+  border:1px solid #b3adad;
+  text-align:left;
+  padding:5px;
+  background: #000;
+  color: #fff;
+}
+
+.btn {
+  background-color: white; /* Green */
+  border: none;
+  color: black(69, 196, 69);
+  padding: 5px 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+
+
+
+
+section.projectExamples {
+  display: flex;
+}
+
+.projectExamples {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.projectBox {
+  background: #3a3a3a;
+  border: 1px solid #000000;
+  margin: 10px;
+  text-align: center;
+  width: 31%;
+}
+
+
+.projectBox img {
+  margin-bottom: 20px;
+}
+
+.projectBox a.button {
+  display: block;
+  width: 70%;
+  margin: 10px auto;
+  color: #FFFFFF;
+  background: #545454;
+  text-align: center;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 15px;
+  padding: 1px;
+}
+
+
