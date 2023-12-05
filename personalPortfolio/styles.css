@@ -14,8 +14,7 @@ html {
     color: white;
     font-family: 'Roboto', Arial, sans-serif;
     
-    margin-left: auto;
-    margin-right: auto;
+  
 }
 
 
@@ -28,6 +27,9 @@ img.logo{
           max-height: 50px;
           float: left;
 }
+
+/* Start of Navbar */
+
 ul {
     list-style-type: none;
     margin: 0;
@@ -71,17 +73,9 @@ ul {
   
   }
 
-.current {
-  font-weight: bold;
-}
+/* End of Navbar */
 
-.completed {
-  color: green;
-}
-
-td.completed {
-  color: green;
-}
+/*  */
 
   .column1 {
     float: left;
