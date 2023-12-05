@@ -104,7 +104,11 @@ td.completed {
 	margin-top: 20px;
   }
 
+input:focus {
 
+width: 300px;
+
+}
 
 
 footer {
