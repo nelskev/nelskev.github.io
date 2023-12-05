@@ -159,6 +159,7 @@ section.projectExamples {
 
 .projectBox {
   background: #3a3a3a;
+ background-image: linear-gradient(black, #2f2f2f);
   border: 1px solid #000000;
   margin: 10px;
   text-align: center;
