@@ -133,6 +133,9 @@ table {
   border-collapse:collapse;
   padding:5px;
 }
+caption {
+	font-weight: bold;
+}
 table th {
   border:1px solid #b3adad;
   padding:5px;
