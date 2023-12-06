@@ -100,7 +100,7 @@ ul {
 	margin-top: 20px;
   }
 
-input:focus .textBox {
+.textBox:focus {
 
 width: 300px;
 
