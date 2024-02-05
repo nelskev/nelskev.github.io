@@ -1,0 +1,76 @@
+/* Colors taken from https://colorhunt.co/palette/0766ad29adb2c5e898f3f3f3 */
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F3F3F3;
+}
+
+/* Navbar code from W3Schools */
+
+
+.navbar {
+    background-color: #0766AD;
+    overflow: hidden;
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    background-color: #29ADB2;
+}
+
+/* a.disabled code from: https://stackoverflow.com/questions/10276133/how-to-disable-html-links */
+
+a.disabled {
+    pointer-events: none;
+}
+
+/* End of Navbar code section */
+
+.main {
+    padding: 15px;
+    text-align: center;
+}
+
+/* Formatting for each phone section */
+
+.phone {
+    margin: 20px;
+    padding: 10px;
+    background-color: #C5E898;
+    border-radius: 4px;
+}
+
+.phone img {
+    width: 50%;
+    max-width: 200px;
+    height: auto;
+}
+
+/* End of phone section formatting */
+
+
+
+
+/*Footer code from W3Schools */
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #29ADB2;
+    color: white;
+    text-align: center;
+ }
+
