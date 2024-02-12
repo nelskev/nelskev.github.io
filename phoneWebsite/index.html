@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Kevin Nelson
+01-28-23 -->
+
+<head>
+    <title>Phone Store</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="phone store website assignment CWI Jan 2023">
+    <meta name="description" content="Phone store website assignment for SWDV-140 JavaScript">
+    <link rel="stylesheet" type="text/css" href="./css/styles.css">
+    
+</head>
+<body>
+
+ <!-- Top of the webpage navigation bar | Webpage links not finished are set to not work at the moment-->
+ <div class="navbar">
+    <a href="index.html">Home</a>
+    <a href="faq.html">FaQ</a>
+    <a class="disabled" href="shop.html">Shop</a>
+    <a href="contact.html">Contact Us</a>
+    <a href="emailList.html">Newsletter</a>
+</div>
+
+<main>
+ <!-- Main section -->
+        <h1>Phone Store</h1>
+        <h3>Welcome to our phone store. </h3>
+        <p> We offer new and used phones at competitive prices. 
+        Our goal is for our customers to find the right item at the right price.</p> 
+        <div class="phone">
+            <img src="./images/s24u.png" alt="Samsung Galaxy S24 Ultra">
+            <p>The Samsung S24 Ultra offers a titanium body, bright ultra HD OLED display, and new AI features.</p>
+        </div>
+        <div class="phone">
+            <img src="./images/1+12.png" alt="OnePlus 12">
+            <p>The OnePlus 12 offers a bright display, a rain-resistent touchscreen, and 30 minute fast charging.</p>
+        </div>
+    
+</main>
+
+   <!-- Copyright section. Current year is automatically put in with JavaScript -->
+    <div class="footer">
+        <p>&copy; <span id="year"></span> | All rights reserved.</p>
+    </div>
+
+    <script src="./js/scripts.js"></script>
+</body>
+</html>
