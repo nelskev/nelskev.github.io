@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Kevin Nelson
+02-25-23 -->
+
+<head>
+    <title>Shop - Phone Store</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="phone store website assignment CWI Jan 2023">
+    <meta name="description" content="Phone store website assignment for SWDV-140 JavaScript">
+    <link rel="stylesheet" type="text/css" href="./css/styles.css">
+</head>
+<body>
+
+ <!-- Top of the webpage navigation bar | Webpage links not finished are set to not work at the moment-->
+ <div class="navbar">
+    <a href="index.html">Home</a>
+    <a href="faq.html">FAQ</a>
+    <a href="shop.html">Shop</a>
+    <a href="contact.html">Contact Us</a>
+    <a href="emailList.html">Newsletter</a>
+</div>
+
+<!-- Main Section -->
+<main>
+        <h1>Shop</h1>
+        <p> Here are our products that we currently have in stock.</p> 
+        <div class="phone" id="s24u">
+            <img src="./images/s24u.png" alt="Samsung Galaxy S24 Ultra">
+            <p>The Samsung S24 Ultra offers a titanium body, bright ultra HD OLED display, and new AI features.</p>
+            <p>Price: $1199</p>
+            <a href="#"><input type="button" id="buy-s24u" class="buy" value="Buy Now"></a></input>
+        </div>
+        <div class="phone" id="1+12">
+            <img src="./images/1+12.png" alt="OnePlus 12">
+            <p>The OnePlus 12 offers a bright display, a rain-resistent touchscreen, and 30 minute fast charging.</p>
+            <p>Price: $699</p>
+            <a href="#"><input type="button" id="buy-1+12" class="buy" value="Buy Now"></a></input>
+        </div>
+        <div class="phone" id="ai15p">
+            <img src="./images/ai15p.png" alt="Apple iPhone 15 Pro">
+            <p>The Apple iPhone 15 pro offers a 2000nit OLED display, MagSafe charging along with USB-C, and 10 Gigabytes per second transfer speeds.</p>
+            <p>Price: $899</p>
+            <a href="#"><input type="button" id="buy-1+12" class="buy" value="Buy Now"></a></input>
+        </div>
+    
+</main>
+
+   <!-- Copyright section. Current year is automatically put in with JavaScript -->
+    <div class="footer">
+        <p>&copy; <span id="year"></span> | All rights reserved.</p>
+    </div>
+
+    <script src="./js/scripts.js"></script>
+</body>
+</html>

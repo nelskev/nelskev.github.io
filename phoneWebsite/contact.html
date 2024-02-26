@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Kevin Nelson
+02-25-23 -->
+
+<head>
+    <title>Contact Us - Phone Store</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="phone store website assignment CWI Jan 2023">
+    <meta name="description" content="Phone store website assignment for SWDV-140 JavaScript">
+    <link rel="stylesheet" type="text/css" href="./css/styles.css">
+    
+</head>
+<body>
+
+ <!-- Top of the webpage navigation bar | Webpage links not finished are set to not work at the moment-->
+ <div class="navbar">
+  <a href="index.html">Home</a>
+  <a href="faq.html">FAQ</a>
+  <a href="shop.html">Shop</a>
+  <a href="contact.html">Contact Us</a>
+  <a href="emailList.html">Newsletter</a>
+</div>
+ <!-- Main section -->
+ <main>
+    <div class="contact">
+        <h1>Contact Us</h1>
+        <p>If you have any questions about a product you ordered or you have a concern with it, please fill out the form below and we will get back to you as soon as we can. Please also check
+            our <a href="./faq.html">FAQ page</a> if we have a question that may have been answered already.
+    </p>
+
+    <p>
+      Want to signup for our newsletter? <a href="./emailList.html">Click Here</a>
+    </p>
+    
+        <br>
+        <br>
+
+        <form action="./contactSuccess.html" method="post">
+<fieldset>
+
+  <div>
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" value="">
+  </div>
+  <div>
+    <label for="mail">Email:</label>
+    <input type="email" id="email" name="email" value="" >
+  </div>   
+  <div>
+    <label for="msg">Message:</label>
+    <br>
+    <textarea id="message" name="message" rows="4" cols="40" ></textarea>
+  </div>
+  <div>
+    <button type="submit">Submit</button>
+    <input type="button" id="contactClear" value="Clear Form">
+
+  </div>
+  
+  
+
+
+</fieldset>
+          </form>
+          
+    </div>
+</main>
+
+   <!-- Copyright section. Current year is automatically put in with JavaScript -->
+    <div class="footer">
+        <p>&copy; <span id="year"></span> | All rights reserved.</p>
+    </div>
+
+    <script src="./js/scripts.js"></script>
+    <script src="./js/scriptsContact.js"></script>
+</body>
+</html>
