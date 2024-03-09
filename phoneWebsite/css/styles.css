@@ -1,0 +1,261 @@
+/* Colors taken from https://colorhunt.co/palette/0766ad29adb2c5e898f3f3f3 */
+
+
+/* ModLog 03-04-24
+
+Adjusted code to remove two phone divs showing up side by side due to errors.
+Added descriptionCenter class which makes the phone image, price tag, and buy button
+appear centrally
+
+Changed website theme to mainly center rather than aligning to the left
+
+*/
+    
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F3F3F3;
+
+    background-image: radial-gradient(rgba(0,0,0,0.1) 3px, transparent 3px );
+    background-size: 50px 50px;
+
+    text-align: center;
+
+}
+
+/* Navbar code from W3Schools */
+
+
+
+.navbar {
+    background-color: #0766AD;
+    overflow: hidden;
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    background-color: #29ADB2;
+}
+
+/* a.disabled code from: https://stackoverflow.com/questions/10276133/how-to-disable-html-links */
+
+a.disabled {
+    pointer-events: none;
+}
+
+/* End of Navbar code section */
+
+main {
+    padding: 15px;
+}
+
+label + input {
+    margin-bottom: 1em; 
+  }
+
+/* Specialty Classes*/
+
+.faq {
+    text-align: center;
+    border: #0056b3;
+}
+
+.faq a {
+    color: #000;
+    text-decoration: none;
+}
+
+.faq .link {
+    text-decoration: underline;
+    color: blue;
+}
+
+.faq span {
+    /* opacity: 0; */
+    color: #000;
+}
+
+.faq li::marker {
+    content: "\1F4DE  ";
+    color: rgb(0, 0, 0);
+}
+
+div.question {
+    display: none;
+}
+  
+
+.contact {
+ text-align: center;
+}
+
+.emailList {
+    text-align: center;
+}
+
+textarea {
+    font-family: inherit;
+ }
+
+
+/* Formatting for each phone section on index.html only */
+
+#phone {
+    margin: 20px;
+    padding: 10px;
+    background-color: #C5E898;
+    border-radius: 4px;
+}
+
+#phone img {
+    width: 50%;
+    max-width: 200px;
+    height: auto;
+}
+
+/* End of phone section formatting */
+
+/* Contact Us Formatting */
+.contactUs span {
+    color: red;
+}
+
+/* Email List formatting */
+.emailList span {
+    color: red;
+}
+
+.tabs {
+    text-align: left;
+}
+
+
+#messageLabel.emailList,
+#messageLabel.contactUs {
+    color: #0056b3;
+    font-size: medium;
+    font-weight: bold;
+}
+
+/* FAQ Formatting */
+
+div.closed {
+    display: none;
+}
+
+
+/*Footer code from W3Schools */
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #29ADB2;
+    color: white;
+    text-align: center;
+ }
+
+
+
+
+
+
+/* Formatting for class phone on shop.html page */
+
+@media (min-width: 1200px) {
+    .phone {
+        display: block;
+        width: 65%;
+        margin: auto;
+    }
+
+    .phone img {
+        max-height: 300px;
+        height: auto;
+        margin: 0 auto; 
+        
+    }
+
+  
+}
+@media (max-width: 1199px) {
+    .phone {
+        width: auto;
+        margin: auto;
+        display: block;
+    }
+
+     .phone img {
+        max-height: 100px;
+        height: auto;
+        margin: 0 auto; 
+     }
+
+       
+}
+
+
+.phone {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 20px;
+    background-color: rgb(243,243,243);
+
+    
+}
+
+
+
+.phone p {
+    margin-top: 10px;
+}
+.descriptionCenter {
+    text-align: center;
+    margin-bottom: 08px;
+}
+
+/* Below code changes previous and next buttons for the slides on shop.html */
+.slick-prev:before {
+    color: rgba(0, 0, 0, 0.65); 
+    margin-left: 5px;
+ 
+}
+
+.slick-next:before {
+    color: rgba(0, 0, 0, 0.65); 
+    margin-left: -10px;
+ 
+}
+
+
+
+.buy {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+   
+}
+
+.buy:hover {
+    background-color: #0056b3;
+    transition: 0.3s;
+}
+
+
+
+

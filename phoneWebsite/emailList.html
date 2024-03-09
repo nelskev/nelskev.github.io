@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Kevin Nelson
+03-04-24 -->
+
+<!-- ModLog
+03-04-24
+
+Removed form submission and replaced it with a
+messageLabel that gives a successfully received message -->
+
+<head>
+    <title>Newsletter Signup - Phone Store</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="phone store website assignment CWI Jan 2023">
+    <meta name="description" content="Phone store website assignment for SWDV-140 JavaScript">
+    <link rel="stylesheet" type="text/css" href="./css/styles.css">
+    
+</head>
+<body>
+
+ <!-- Top of the webpage navigation bar | Webpage links not finished are set to not work at the moment-->
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="faq.html">FAQ</a>
+        <a href="shop.html">Shop</a>
+        <a href="contact.html">Contact Us</a>
+        <a href="emailList.html">Newsletter</a>
+    </div>
+
+ <!-- Main section -->
+ <main>
+     <div class="emailList">
+    <h1>Newsletter Signup</h1>
+    <p>If you would like to join our newsletter, which includes news in the smartphone world and occasional offers, please fill out the form below! You can unsubscribe at any time if you are no longer interested.</p>
+    <form id="emailForm" name="emailForm">
+
+    <fieldset>   
+        <div>
+            <label for="email1">Email Address:</label>
+            <input type="text" id="email1" name="email1">
+            <span>*</span>
+        </div>
+        
+        <div>
+            <label for="email2">Confirm Email Address:</label>
+            <input type="text" id="email2" name="email2">
+            <span>*</span>
+        </div>
+        
+        <div>
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" name="firstName">
+            <span>*</span>
+        </div>
+        
+        <div>
+            <label>&nbsp;</label>
+            <input type="button" id="joinList" value="Join List">
+            <input type="button" id="clearForm" value="Clear Form">
+        </div>     
+    </fieldset>
+    
+</div>
+
+</form>
+<label id="messageLabel" class="emailList"></label>
+</main>
+
+   <!-- Copyright section. Current year is automatically put in with JavaScript -->
+    <div class="footer">
+        <p>&copy; <span id="year"></span> | All rights reserved.</p>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js"></script>
+    <script src="./js/scripts.js"></script>
+    <script src="./js/scriptsEmail.js"></script>
+</body>
+</html>

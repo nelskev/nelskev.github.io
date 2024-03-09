@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Kevin Nelson
+03-08-24
+-->
+
+<!-- ModLog
+
+03-08-24
+
+Added time and date section along with time selector plugin
+
+03-04-24
+
+Added descriptionCenter class which makes the phone image, price tag, and buy button appear centrally
+
+-->
+
+
+
+<head>
+    <title>Shop - Phone Store</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="phone store website assignment CWI Jan 2023">
+    <meta name="description" content="Phone store website assignment for SWDV-140 JavaScript">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    <link rel="stylesheet" type="text/css" href="./css/styles.css">
+</head>
+<body>
+
+ <!-- Top of the webpage navigation bar | Webpage links not finished are set to not work at the moment-->
+ <div class="navbar">
+    <a href="index.html">Home</a>
+    <a href="faq.html">FAQ</a>
+    <a href="shop.html">Shop</a>
+    <a href="contact.html">Contact Us</a>
+    <a href="emailList.html">Newsletter</a>
+</div>
+
+<!-- Main Section -->
+<main>
+
+
+  
+    
+        <h1>Shop</h1>
+        <p> Here are our products that we currently have in stock.</p> 
+
+        <div id="dialog" title="Added to cart!">
+        </div>
+
+        <div class="phone" id="s24u">
+            <div class="carousel">
+                <div><img src="./images/s24/s24u.png" alt="Samsung Galaxy S24 Ultra"></div>
+                <div><img src="./images/s24/phoneOnCounter.png" alt="A Samsung Galaxy S24 Ultra on a countertop"></div>
+                <div><img src="./images/s24/manHold.png" alt="Gentleman Holding Samsung Galaxy S24 Ultra"></div>
+                <div><img src="./images/s24/phoneOnTable.png" alt="A Samsung Galaxy S24 Ultra on a table next to a laptop on the left and a cup of coffee on the right"></div>
+            </div>
+            <div class="descriptionCenter">
+              <p>The Samsung S24 Ultra offers a titanium body, bright OLED display, and new AI features.</p>
+              <p>Price: $1199</p>
+              <a href="#"><input type="button" id="buy-s24u" class="buy" value="Buy Now"></a></input>
+            </div>
+            
+
+            <div class="tabs">
+                <ul>
+                  <li><a href="#tabs-s24u1">Description</a></li>
+                  <li><a href="#tabs-s24u2">FAQs</a></li>
+                  <li><a href="#tabs-s24u3">Color</a></li>
+                </ul>
+                <div id="tabs-s24u1">
+                  <!-- Information taken from prior knowledge and the following page: https://www.samsung.com/us/smartphones/galaxy-s24-ultra/ -->
+                  <p>The Samsung S24 ultra has a flat display compared to older model. New AI features are embedded including Circle to Search, Live Translate, and Chat Assist.
+                    Circle to Search allow users to use the included S Pen to circle something they see interesting on their screen, and they can circle it bringing results from Google.
+                    Live Translate allows a user to talk to someone that does not speak their language by providing audio and subtitles on screen in their language.
+                    Chat assist allows users to rewrite their message in a different tone.
+                  </p>
+                </div>
+                <div id="tabs-s24u2">
+                  <p>How is the Samsung Galaxy S24 Ultra different from the previous S23 Ultra?</p>
+                  <ul>
+<li> The S24 Ultra has a flat display compared to the previous S23 ultra having a curved display</li>
+<li>The S24 Ultra has a titanium frame compared to the S23 Ultra having an Armor Aluminum frame.</li>
+</ul>
+
+</div>
+                <div id="tabs-s24u3">
+                  <p>Color Options</p>
+                  <ul>
+                    <li>Titanium Green</li>
+                    <li>Titanium Blue</li>
+                    <li>Titanium Orange</li>
+                    <li>Titanium Violet</li>
+                    <li>Titanium Yellow</li>
+                    <li>Titanium Black</li>
+                    <li>Titanium Gray</li>
+                  </ul>
+                </div>
+              </div>
+
+        </div>
+        <div class="phone" id="1+12">
+            <div class="carousel">
+                <div><img src="./images/1+12/1+12.png" alt="OnePlus 12 front and back view"></div>
+                <div><img src="./images/1+12/frontOnSurface.png" alt="OnePlus 12 front view on surface"></div>
+                <div><img src="./images/1+12/phonesInHand.png" alt="Two OnePlus phones help in a hand"></div>
+            </div>
+            <div class="descriptionCenter">
+            <p>The OnePlus 12 offers a bright display, a rain-resistent touchscreen, and 30 minute fast charging.</p>
+            <p>Price: $699</p>
+            <a href="#"><input type="button" id="buy-1+12" class="buy" value="Buy Now"></a></input>
+            </div>
+
+            <div class="tabs">
+                <ul>
+                  <li><a href="#tabs-1+12-1">Description</a></li>
+                  <li><a href="#tabs-1+12-2">FAQs</a></li>
+                  <li><a href="#tabs-1+12-3">Color</a></li>
+                </ul>
+                <div id="tabs-1+12-1">
+                  <!-- Information taken from prior knowledge and the following page: https://www.oneplus.com/us/oneplus-12  -->
+                  <p>The OnePlus 12 is a powerhouse using Qualcomm's Snapdragon 8 Generation 3 Chip. The display supports 2K up to 120hz with ProXDR capabilities. The phone can charge from 1 to 100 percent in 31 minutes using 80W charging, and has a powerful cooling system to support the fast charging speeds. </p>
+                </div>
+                <div id="tabs-1+12-2">
+                  <p>How is the OnePlus 12 different from the OnePlus 11?</p>
+                  <!-- Information taken from:  https://www.phonearena.com/reviews/oneplus-12-vs-oneplus-11_id6049-->
+                  <ul>
+                    <li>Physically speaking, the OnePlus 12 is a slightly larger phone with a little more weight.</li>
+                    <li>The display on the OnePlus 12 supports up to 4,500 nits compared to the previous generations 1,300 nits.</li>
+                    <li>The phone has 50 Watt wireless charging support compared to no wireless charging support on the OnePlus 11.</li>
+                    <LI>The OnePlus 12 now offers seven years of major Operating System updates compared to the previous models four. </LI>
+                  </ul>
+                </div>
+                <div id="tabs-1+12-3">
+                  <p>Color Options</p>
+                  <!-- Information taken from: https://www.oneplus.com/us/oneplus-12 -->
+                  <ul>
+                    <li>Silky Black</li>
+                    <li>Flowy Emerald</li>
+                  </ul>
+                </div>
+              </div>
+        </div>
+        <div class="phone" id="ai15p">
+            
+            <div class="carousel">
+                <div><img src="./images/ai15p/ai15p.png" alt="Apple iPhone 15 Pro"></div>
+                <div><img src="./images/ai15p/phoneInFrontOfStore.png" alt="Apple iPhone 15 Pro in front of an Apple store"></div>
+                <div><img src="./images/ai15p/phonesMirror.png" alt="Two Apple iPhone 15 Pros against each other in opposite directions."></div>
+            </div>
+            <div class="descriptionCenter">
+            <p>The Apple iPhone 15 pro offers a 2000nit OLED display, MagSafe charging along with USB-C, and 10 Gigabytes per second transfer speeds.</p>
+            <p>Price: $899</p>
+            <a href="#"><input type="button" id="buy-ai15p" class="buy" value="Buy Now"></a></input>
+            </div>
+
+            <div class="tabs">
+                <ul>
+                  <li><a href="#tabs-ai15p1">Description</a></li>
+                  <li><a href="#tabs-ai15p2">FAQs</a></li>
+                  <li><a href="#tabs-ai15p3">Color</a></li>
+                </ul>
+                <div id="tabs-ai15p1">
+                 <!-- Information taken from: https://www.apple.com/iphone-15-pro/  -->
+
+                  <p>The iPhone 15 Pro is the first iPhone to use USB-C for charging and data transfer. 
+                    The phone is designed with titanium to support a lighter weight than previous iPhone pro models. 
+                    The iPhone 15 Pro has an A17 Pro chips to boost mobile game performance and graphics. 
+                    Instead of the ringer switch on the left side, the phone now has an action button which the user can choose from a variety of options. </p>
+                </div>
+                <div id="tabs-ai15p2">
+                  <p>How is the Apple iPhone 15 Pro different from the iPhone 14 Pro?</p>
+                  <!-- Information taken from: https://www.apple.com/iphone/compare/?modelList=iphone-15-pro,iphone-14-pro  -->
+                  <ul>
+                    <li>The Apple iPhone 15 Pro has a titanium frame instead of the aluminum frame on the iPhone 14 Pro. </li>
+                    <li>It also has a USB-C port for charging and data transfer instead of the lightning port on the previous iPhone models. </li>
+                  </ul>
+                </div>
+                <div id="tabs-ai15p3">
+                  <p>Color Options</p>
+                  <!-- Information taken from  https://www.apple.com/shop/buy-iphone/iphone-15-pro-->
+                  <ul>
+                    <li>Natural Titanium </li>
+                    <li>Blue Titanium </li>
+                    <li>White Titanium </li>
+                    <li>Black Titanium </li>
+                  </ul>
+                </div>
+              </div>
+        </div>
+
+     
+    
+</main>
+
+   <!-- Copyright section. Current year is automatically put in with JavaScript -->
+    <footer class="footer">
+        <p>&copy; <span id="year"></span> | All rights reserved.</p>
+    </footer>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
+    <script src="./js/scriptsShop.js"></script>
+    <script src="./js/scripts.js"></script>
+    
+
+</body>
+</html>
