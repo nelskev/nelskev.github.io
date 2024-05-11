@@ -1,0 +1,311 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=EB+Garamond:wght@400;500;800&family=Roboto:ital,wght@0,100;0,400;0,700;1,100;1,300&display=swap');
+
+@font-face {
+    font-family: 'carlitoregular';
+    src: url('carlito-regular-webfont.woff2') format('woff2'),
+         url('carlito-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+html {
+    background-color: black;
+    color: white;
+    font-family: 'Roboto', Arial, sans-serif;
+    
+  
+}
+
+.center {
+  text-align: center;
+}
+
+
+a {
+	color: forestgreen;
+}
+img.logo{
+  -webkit-filter: invert(.75); /* safari 6.0 - 9.0 */
+          filter: invert(.75);
+          max-height: 50px;
+          float: left;
+}
+
+/* Start of Navbar */
+
+/* Currently no longer in use. check navbar.css
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a.active {
+    background-color: white;
+    color: black;
+  }
+
+  /* li a:visited {
+    color: rgb(69, 196, 69);
+  } 
+  li a:hover:visited {
+    color: rgb(12, 49, 12);
+  } */
+
+  /*
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 12px 14px;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    background-color: white;
+    color: black;
+    
+  }
+
+  li a:active {
+    background-color: black;
+    color: white;
+  
+  }
+
+  /*
+
+/* End of Navbar */
+
+/*  */
+
+  .column1 {
+    float: left;
+    width: 20%;
+  }
+
+  .column2 {
+    float: right;
+    width: 80%;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+.image-1 {
+    filter: invert(100%);
+	-webkit-filter: invert(100%);
+	margin-top: 20px;
+  }
+
+.textBox:focus {
+
+width: 300px;
+
+}
+
+
+footer {
+	font-size: .75em;
+	text-align: center;
+	padding: 10px;
+	/* background-color: #a31313; */
+
+}
+
+
+.classesTaken {
+font-family: 'carlitoregular', Arial, sans-serif;
+}
+
+
+table {
+  width:600px;
+  height:250px; 
+  border:1px solid #b3adad;
+  border-collapse:collapse;
+  padding:5px;
+}
+caption {
+	font-weight: bold;
+}
+table th {
+  border:1px solid #b3adad;
+  padding:5px;
+  background: #f0f0f0;
+  color: #313030;
+}
+table td {
+  border:1px solid #b3adad;
+  text-align:left;
+  padding:5px;
+  background: #000;
+  color: #fff;
+}
+
+
+
+
+/* Below mobile responsive code taken from  https://wpdatatables.com/how-to-make-a-table-responsive/*/
+@media screen and (max-width: 600px) {
+  table {width:100%;
+  }
+  thead {display: none;}
+  .noMobile {display: none;}
+  tr:nth-of-type(2n) {background-color: inherit;}
+  /* tr td:first-child {background: #f0f0f0; font-weight:bold;font-size:1.3em;} */
+  tbody td {display: block;  text-align:left;}
+  tbody td:before { 
+      content: attr(data-th); 
+      display: block;
+      text-align:center;  
+  }
+
+
+  main {
+    padding: 20px;
+  }
+
+  fieldset {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+
+  input\,
+  select,
+  textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+
+  input[type='submit'] {
+    width: 100%;
+  }
+
+ 
+
+}
+
+
+.btn {
+  background-color: white; /* Green */
+  border: none;
+  color: black;
+  padding: 5px 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+
+
+@media screen and (max-width: 1024px){
+  section.projectExamples {
+      display: block;
+  }
+
+  .projectExamples {
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  .projectBox {
+    background: #3a3a3a;
+   background-image: linear-gradient(black, #2f2f2f);
+    border: 1px solid #000000;
+    margin: 10px;
+    text-align: center;
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+ 
+  /* section.projectExamples {
+    display: flex; }
+
+  .projectExamples {
+    width: 90%;
+    margin: 0 auto;
+  }
+  */
+  
+  .projectBox {
+        flex: 0 0 calc(33% - 20px); 
+
+    background: #3a3a3a;
+   background-image: linear-gradient(black, #2f2f2f);
+    border: 1px solid #000000;
+    margin: 10px;
+    text-align: center;
+    /* width: 31%; */
+  } 
+  .projectExamples {
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: 0 auto;
+  }
+  
+  
+
+  .breaker {
+    display: none;
+  }
+  .breaker:nth-child(3n) {
+    display: block;
+    width: 100%;
+    height: 0;
+  }
+  
+}
+
+
+
+
+
+.projectBox img {
+  margin-bottom: 20px;
+}
+
+.projectBox a.button {
+  display: block;
+  width: 70%;
+  margin: 10px auto;
+  color: #FFFFFF;
+  background: #545454;
+  text-align: center;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 15px;
+  padding: 1px;
+}
+
+
+#footer {
+font-size: 1rem;
+}
+
+span {
+  color: rgb(255, 26, 26);
+}

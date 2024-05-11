@@ -2,64 +2,94 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="Personal Portfolio for Kevin Nelson | Classes">
+    <meta name="description" content="Personal Portfolio for Kevin Nelson">
     <meta name="keywords" content="Portfolio HTML CSS Final">
     <meta name="author" content="Kevin Nelson">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Portfolio - Classes</title>
-    <link rel="stylesheet" href="./styles.css">
+    <title>Classes - Personal Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/navbar.css">
+    <link rel="icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIAAAACACAYAAADDPmHLAAATuklEQVR4Xu2dCfhWw/fApyJF9hCyZK1sPba/LUJUEmWvhKzZQ/ZdPdbQz5Z9ScoeKUXImsq+pBBSUZaHEELLfz63bt3v+733zpm5932/7327xzOP6jvLmTPnzpz9W0uZYRPdZX/d2ujWULdGujU2D8t71AAFZuo1/faW/vOTuk2Kw6NWxA/r6H/vrFsX3drVwEbyJdOjwAg91SDdBus2r3DaMAZYRne6Vbce6eFQjJlq60nnF2Ni+znLCJUw5Behx23QXbfZwT6FDLCK/uEQ3VrZUyEfkQEKfLjoRueZ8CDIAE313/vq1j4DG8lRdKfAcD20l26ebLCYAfQ10V9fqClc+2V+H7oTrpJGDtOb6RBkgG76LwMqaYf5XowU4MwH+jfA6PzdNxKs0jpM1htqBgOg34+stN3V2H6g6IJ0Vi/BY9oWdHvrdokryiVA0gG18sTKYSPFHtIHBsBQ0LbYK+XzlyUFPoUBJujWvCzRy5EqNgUmwgDTdMtt+8UmdZnOn6LIUqY7zNGKpUDOACkzSNYImgzfZKNTJn3lTVcK8pZijco7mQraUc4AFXSYLlvJCANkBE2XE6jhMSLKijrV8Eby5d0okJ+tG90qZlTOABVzlG4byRnAjW4ho7LpgMoZIDUGyOZEOQMIzy2b37d5cyVmgEolo5nQVj0iTqUYh1WMOa32WsrOOftVp3aFMMBSfrQJTnHR0AQzlPITztdKnQIZOfmMf+FlTOUyRs2W2StoK7ZbT9A/p1oC4lXC0JwBMnmK6T2J5ccA6e2teEebBRyFuy8/BhAinndLhwLODLDiiiuq3XffXW222WZq4403VhtttJHaYIMNVK1atdSUKVPUN998oz755BN15513OmPavHlz1aFDB7XXXnt58zds2FCtvPLKav78+eqXX35RP/30k/rhhx/UuHHj1AsvvKBeffVV57WyOPD8889XRx99tEcTzmOFFVZQf/zxh0f3M888U73//vvGbVkzAAtdeumlqkePHt6iJpg6daq6/PLL1YMPPmjquvjnLVu2VJdddplq3bq1eAwdf/75Z9W3b1913XXXWY3LYufTTjtN3XorhVzCYfbs2d6H+eOPP8ZuT8wAHDaHwsE3aNDAmmYXX3yxuvrqq43j7rvvPnXsscca+8V1mD59ujrwwANFX0CihVR1YWDNNdf0bqrVV19drbLKKl7jC+X/0JDb6+GHH1afffZZoqUnTZqkNt9889g5LrjgAuPHIGKAxo0bq5deesm4YBw2//33n9pzzz3VW29RvKo6sMaLL76omjVrlogw/mCuwoMPPliNGjUqlfkKJ+F52nfffdUWW2zhPU9NmjRR6623nlpmGUosmeHCCy9U1157rbljSI999tnHo5UJnn32WdWxU8fYbGUjA7BRiLjOOuuY1jP+/J133lE77rhjtX58Ge+9957adNNNjXMs7EBxKL6+eHj55Zetn5GoGaFDmzZtPLln1113VWussYZp+difz5w5U6299tpOcwwZMkR17KgP1gBvvvmm4jmNAyMDIGCFHZpp8bCfz5s3T6266qqeoOIDh//GG2+obbbZxmVK45iDDjpIQTBXOOOMM9Tpp5+uNtmEconpAU9BnTpU47MDnhieuGWXXdY4cMKECWrLLbd0Z4AjjjhCDR5Mebn0oGvXrmrQIMrWLQSehF122SW9BQpm4ktDUwkynWkxiHzWWWepE044wXvLiwHffvut2nDDDa2nvuqqqzwhXAIffPCB2nbbbd0ZYPTo0apVq1aStcR9br/9doUECzz33HNq//0pQlpckAhDPgYnnnii6tfvf6p+/XpFRYo3nCfFFvj61113XdGwoUOHesJwHMQ+Ad99913k2z9nzhw1ZuwYVa9uPasveODAgapbt25eGzAgWJeKuiqgkz58/vnnqmlTquDFwy233OJd96WAfv36ebeMDRx22GHqscceEw+57bbbjPuJZQDeKQw7hfDkk096qpp/raKP+l+1CbtnnnlGHXXUUWry5MmKq7ZUgByDEBoFtsRNircJn7D5EeoQQKVw8sknGw1xsQzwzz//qLp16y5e76+//lK9evVS/fv3r4YDzCCxD6BOfv/99x4T2MDff/+tFixYoJZffnmbYYv7nn322ermm2+OHAtOrlK5LULDhw+3fvp4y9GUpDB37ly12mqrGWWfWAbwOY7r/vXXX/euky+++CIUB3TOAw44wIgfmkDt2rVDb5bCwRz6XXfd5TGcv+7WW2+t7r33XrXDDjsY1wp2eOSRR9SRRx4ZOoY5P/roI6v5Zs2a5Zm7f/31V4XVTbJ3fwFsB7aGIJ5OBGgpoFmhsprAqAZy5UQZb4KTY9TA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">
 </head>
 <body>
-<!-- Navbar -->
     <header>
-        <a href="index.html"><img class="logo" src="./logo.svg" alt="home logo"></a>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="classes.html">Classes</a></li>
-            <li><a href="experience.html">Experience</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul> 
-    </header>
+        <!-- <header id="navbar"></header> -->
+    <!-- Navbar code taken from W3Schools: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_topnav -->
+            <div class="topnav" id="myTopnav">
+            <a href="index.html">Home</a>
+            <a href="#"  class="active">Classes</a>
+            <a href="experience.html">Experience</a>
+            <a href="contact.html">Contact</a>
+            <a href="javascript:void(0);" class="icon" onclick="navbarFunction()">
+                <i class="fa fa-bars"></i>
+              </a>
+        
+            </div>
+    
+        </header>
+
 <main>
 
-    <h2>Classes I have taken</h2>
+    <h2>Classes I am taking currently</h2>
 
-<!-- Table Start -->
-    <table class="classesTaken"> <!-- Class "classesTaken" gives the table the custom font 'carlitoregular' -->
+    <!-- <p>Active classes are <b>bold</b>, and classes I have taken are <a class="completed">green</a>.</p> -->
+
+    <table>
         <caption>College of Western CTE Idaho Software Development Associate Degree</caption>
-        <tr>
+        <tr class="noMobile">
         
             <td>Number</td>
             <td>Name</td>
             <td>Language</td>
-            <td>Class Type</td>
+            <!-- <td>Class Type</td> -->
         
         </tr>
-        <tr><td colspan="4" class="current">First Year: Client-Side Development</td></tr>
+        <tr><td colspan="3" class="current center">
+            <!-- First Year: Client-Side Development -->
+            Classes I Have Taken
+        </td></tr>
         
         
         
-        <tr><td >SWDV-105</td>
-            <td >Introduction to Programming</td>
-            <td >C#</td>
-            <td >Hyflex</td>
+        <tr><td class="completed">SWDV-105</td>
+            <td class="completed">Introduction to Programming</td>
+            <td class="completed">C#</td>
+            <!-- <td class="completed">Hyflex</td> -->
         </tr>
 
 
             
         
-        <tr>    <td >SWDV-110</td>
-                <td >Intermediate Programming</td>
-                <td >C#</td>
-                <td >Hyflex</td>
+        <tr>    <td class="current">SWDV-110</td>
+                <td class="current">Intermediate Programming</td>
+                <td class="current">C#</td>
+                <!-- <td class="current">Hyflex</td> -->
         </tr>
             <tr>
-                <td >SWDV-115</td>
-                <td >Introduction to Web Application Development</td>
-                <td >HTML5/CSS3 Github</td>
-                <td >Hybrid</td>
+                <td class="current">SWDV-115</td>
+                <td class="current">Introduction to Web Application Development</td>
+                <td class="current">HTML5/CSS3 Github</td>
+                <!-- <td class="current">Hybrid</td> -->
             </tr>
-          
+            <tr><td>SWDV-140</td>
+                <td>Intermediate Web Application Development</td>
+                <td>JavaScript</td>
+                <!-- <td>Hyflex</td> -->
+            </tr>
+            <tr><td>SWDV-143</td>
+            <td>Client Side Frameworks</td>  <td>Vue & React</td>
+        <!-- <td>Hyflex</td> -->
+    </tr>
+            <tr><td>SWDV-152</td>
+            <td>Systems Analysis and Design</td>
+        <td>Development Life Cycle & AWS</td>
+        <!-- <td>Hyflex</td> -->
+    </tr>
+           
+           
+        
+        
         
         
         
@@ -67,8 +97,6 @@
         
         </table>
 
-        <!-- Table End -->
-<br>
 
 
 
@@ -77,12 +105,9 @@
 
 
 <footer>
-    <!-- Logo -->
-    <hr>
-    <a href="https://www.linkedin.com" target="_blank"><img src="./images/linkedin.png" class="image-1" alt="LinkedIn Logo"></a>
-<a href="https://github.com/nelskev/nelskev.github.io" target="_blank"><img src="./images/github.png" class="image-1" alt="GitHub Logo"></a>
-    
-
+    <div id="footer"></div>
+    <script src="./js/components.js"></script>
+    <script src="./js/scripts.js"></script>
 </footer>
 
 </body>

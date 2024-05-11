@@ -1,0 +1,219 @@
+/* All credit for this page goes to  
+codepen.io/Hyperplexed
+
+Text Effect : https://codepen.io/Hyperplexed/pen/rNrJgrd
+Hover Effect : https://codepen.io/Hyperplexed/pen/poQmrEq
+*/
+
+
+:root {
+    --phone-rgb: 92 192 249;
+    --planets-rgb: 135 62 35;
+    --react-rgb: 0 153 255;
+  }
+html, body {
+    background-color: black;
+}
+
+body {
+    min-height: 100vh;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 1000ms;
+}
+
+h1 {
+    color: white;
+    font-size: 5rem;
+    font-family: "Space Mono", monospace;
+}
+
+@media screen and (max-width: 600px) {
+ h1{
+  font-size: 2rem;
+ }
+  
+}
+
+
+body:has(.card[data-color="phone"]:hover) {
+    background-color: rgb(var(--phone-rgb) / 25%);
+  }
+  
+  body:has(.card[data-color="planets"]:hover) {
+    background-color: rgb(var(--planets-rgb) / 25%);
+  }
+  
+  body:has(.card[data-color="react"]:hover) {
+    background-color: rgb(var(--react-rgb) / 25%);
+  }
+/*
+.project {
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    animation: fade-right 3s linear infinite;
+    animation: fade-left 3s linear infinite;
+}
+
+.project-faders {
+    opacity: 0;
+}
+
+.project:hover .project-faders {
+    opacity: 1;
+}
+
+@keyframes fade-left {
+    from {
+        scale: 1;
+        translate: 0%;
+        opacity: 1;
+    }
+    to {
+        scale: 0.8;
+        translate: 30%;
+        opacity: 0;
+
+    }
+}
+
+*/
+
+#cards {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  
+  .card {
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    cursor: pointer;
+    outline: none;
+    transition: scale 100ms;
+  }
+  
+  .card .card-front-image {
+    position: relative;
+    z-index: 2;
+  }
+  
+  .card .card-image {
+    width: clamp(300px, 20vw, 500px);
+    height: clamp(200px, 13.33vw, 300px); /* Set a fixed height or adjust as needed */
+    object-fit: cover; /* Maintain aspect ratio and crop image if necessary */
+    border-radius: clamp(0.5rem, 0.75vw, 2rem);
+}
+
+  
+  .card-faders {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 1500ms;
+    pointer-events: none;
+  }
+  
+  .card:hover .card-faders {
+    opacity: 1;
+  }
+  
+  .card:active {
+    scale: 0.98;
+  }
+  
+  .card-fader {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+  }
+  
+  .card-fader:nth-child(odd) {
+    animation: fade-left 3s linear infinite;
+  }
+  
+  .card-fader:nth-child(even) {
+    animation: fade-right 3s linear infinite;
+  }
+  
+  .card-fader:is(:nth-child(3), :nth-child(4)) {
+    animation-delay: 750ms;
+  }
+  
+  .card-fader:is(:nth-child(5), :nth-child(6)) {
+    animation-delay: 1500ms;
+  }
+  
+  .card-fader:is(:nth-child(7), :nth-child(8)) {
+    animation-delay: 2250ms;
+  }
+  
+  @media(max-width: 1200px) {
+    body {    
+      justify-content: flex-start;
+      align-items: flex-start;
+    }
+    
+    #cards {
+      flex-direction: column; 
+      align-items: center;
+      gap: 4rem;
+      padding: 4rem;
+    }
+    
+    .card .card-image {
+      width: 400px;    
+    }
+  }
+  
+  @media(max-width: 600px) {
+    #cards {
+      gap: 2rem;
+      padding: 2rem;
+    }
+    
+    .card {
+      width: 80%;    
+    }
+    
+    .card .card-image {
+      width: 100%;    
+    }
+  }
+  
+  @keyframes fade-left {
+    from {
+      scale: 1;
+      translate: 0%;
+      opacity: 1;
+    }
+    
+    to {
+      scale: 0.8;
+      translate: -30%;
+      opacity: 0;
+    }
+  }
+  
+  @keyframes fade-right {
+    from {
+      scale: 1;
+      translate: 0%;
+      opacity: 1;
+    }
+    
+    to {
+      scale: 0.8;
+      translate: 30%;
+      opacity: 0;
+    }
+  }
