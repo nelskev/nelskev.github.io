@@ -1,12 +1,13 @@
 "use strict";
 
 const footer = footerComponent();
-let currentYear = new Date().getFullYear();
 // const navbar = navbarComponent();
 
 
 function footerComponent() {
   
+    
+    const currentYear = new Date().getFullYear();
     const footer = document.getElementById("footer");
     footer.innerHTML = `
     
