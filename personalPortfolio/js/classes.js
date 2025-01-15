@@ -5,21 +5,25 @@ $(document).ready(function() {
     fetch(csvFile)
       .then(response => response.text())
       .then(data => {
-        const parsedData = Papa.parse(data, { download: true, header: true }).data;
+        // Split the CSV data into rows
+        const rows = data.trim().split('\n');
 
+        // Create the table
         const table = $('<table>');
         table.append($('<tr>').addClass('noMobile')
           .append($('<td>').text('Number'))
           .append($('<td>').text('Name'))
           .append($('<td>').text('Language')));
 
-        parsedData.forEach(row => {
+        // Iterate through the rows and create table cells
+        for (let i = 1; i < rows.length; i++) {
+          const cells = rows[i].split(',');
           const dataRow = $('<tr>');
-          dataRow.append($('<td>').text(row.Number));
-          dataRow.append($('<td>').text(row.Name));
-          dataRow.append($('<td>').text(row.Language));
+          dataRow.append($('<td>').text(cells[0]));
+          dataRow.append($('<td>').text(cells[1]));
+          dataRow.append($('<td>').text(cells[2]));
           table.append(dataRow);
-        });
+        }
 
         $('main').append(table);
       })
