@@ -1,7 +1,7 @@
 "use strict";
 
 const footer = footerComponent();
-const currentYear = new Date().getFullYear();
+let currentYear = new Date().getFullYear();
 // const navbar = navbarComponent();
 
 
