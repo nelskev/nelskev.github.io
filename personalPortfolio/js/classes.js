@@ -1,5 +1,6 @@
 const csvFile = '../data/classes.csv';
 
+
 function buildClassesTable() {
   fetch(csvFile)
     .then(response => response.text())
@@ -25,4 +26,7 @@ function buildClassesTable() {
     .catch(error => console.error('Error:', error));
 }
 
-buildClassesTable();
+// Call the function to build the table
+$(document).ready(function() {
+  buildClassesTable();
+});
