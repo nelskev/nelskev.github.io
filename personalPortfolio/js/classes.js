@@ -1,5 +1,6 @@
 $(document).ready(function() {
-  const csvFile = '../data/classes.csv';
+  // const csvFile = '../data/classes.csv'; Works locally, not on github pages
+  const csvFile = 'https://nelskev.github.io/personalPortfolio/data/classes.csv';
   const $existingTable = $('table.classTable'); 
 
   function buildClassesTable() {
