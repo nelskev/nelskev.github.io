@@ -34,11 +34,20 @@ $(document).ready( () => {
   */
      let item = "unknownPhone";
       switch (this.id) {
+        case "buy-s25u":
+          item = "Samsung S25 Ultra";
+          break;
         case "buy-s24u":
           item = "Samsung S24 Ultra";
           break;
+        case "buy-1+13":
+          item = "OnePlus 13";
+          break;
         case "buy-1+12":
           item = "OnePlus 12";
+          break;
+        case "buy-ai16p":
+          item = "Apple iPhone 16 Pro";
           break;
         case "buy-ai15p":
           item = "Apple iPhone 15 Pro";
