@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Work Hours Tracker</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        input, button, textarea {
+            margin: 5px 0;
+            width: 100%;
+        }
+        #output {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Work Hours Tracker</h1>
+    <div>
+        <h2>Input Individual Entry</h2>
+        <label for="date">Date (e.g., Thu Jan 9):</label>
+        <input type="text" id="date" placeholder="Date">
+        <br>
+        <label for="inTime">In Time (e.g., 8:30AM):</label>
+        <input type="text" id="inTime" placeholder="In Time">
+        <br>
+        <label for="outTime">Out Time (e.g., 2:00PM):</label>
+        <input type="text" id="outTime" placeholder="Out Time">
+        <br>
+        <button onclick="addEntry()">Add Entry</button>
+    </div>
+    <div>
+        <h2>Paste All Data</h2>
+        <textarea id="bulkInput" rows="10" placeholder="Paste your data here..."></textarea>
+        <br>
+        <button onclick="processBulkInput()">Process Data</button>
+    </div>
+    <div id="output"></div>
+    <script>
+        const entries = [];
+
+        function addEntry() {
+            const date = document.getElementById('date').value;
+            const inTime = document.getElementById('inTime').value;
+            const outTime = document.getElementById('outTime').value;
+
+            if (!date || !inTime || !outTime) {
+                alert("Please fill in all fields.");
+                return;
+            }
+
+            const inDate = new Date(`01/01/2000 ${inTime}`);
+            const outDate = new Date(`01/01/2000 ${outTime}`);
+            const hoursWorked = (outDate - inDate) / (1000 * 60 * 60);
+
+            entries.push({ date, hoursWorked });
+
+            document.getElementById('date').value = '';
+            document.getElementById('inTime').value = '';
+            document.getElementById('outTime').value = '';
+
+            displayOutput();
+        }
+
+        function processBulkInput() {
+            const bulkInput = document.getElementById('bulkInput').value.trim();
+            const lines = bulkInput.split('\n');
+            const regex = /(\w+ \w+ \d+):\s*in:\s*(\d{1,2}:\d{2}(?:AM|PM))\s*out:\s*(\d{1,2}:\d{2}(?:AM|PM))/;
+
+            lines.forEach(line => {
+                const match = line.match(regex);
+                if (match) {
+                    const date = match[1];
+                    const inTime = match[2];
+                    const outTime = match[3];
+
+                    const inDate = new Date(`01/01/2000 ${inTime}`);
+                    const outDate = new Date(`01/01/2000 ${outTime}`);
+                    const hoursWorked = (outDate - inDate) / (1000 * 60 * 60);
+
+                    entries.push({ date, hoursWorked });
+                }
+            });
+
+            document.getElementById('bulkInput').value = '';
+            displayOutput();
+        }
+
+        function displayOutput() {
+            const outputDiv = document.getElementById('output');
+            outputDiv.innerHTML = '';
+
+            const totalHours = entries.reduce((sum, entry) => sum + entry.hoursWorked, 0);
+            const hoursPerDay = {};
+
+            entries.forEach(entry => {
+                if (!hoursPerDay[entry.date]) {
+                    hoursPerDay[entry.date] = 0;
+                }
+                hoursPerDay[entry.date] += entry.hoursWorked;
+            });
+
+            outputDiv.innerHTML += '<h2>Hours Worked Per Day:</h2>';
+            for (const [date, hours] of Object.entries(hoursPerDay)) {
+                outputDiv.innerHTML += `<p>${date}: ${hours.toFixed(2)} hours</p>`;
+            }
+
+            outputDiv.innerHTML += `<h2>Total Hours Worked: ${totalHours.toFixed(2)} hours</h2>`;
+        }
+    </script>
+
+</body>
